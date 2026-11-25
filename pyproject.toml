@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tsp-lab"
+version = "0.1.0"
+description = "A small laboratory for TSP heuristics: nearest neighbor, greedy edges, 2-opt, simulated annealing and a genetic algorithm. Pure Python standard library."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Ruizhao Zheng" }
+]
+keywords = ["tsp", "traveling-salesman", "heuristics", "optimization", "2-opt", "genetic-algorithm"]
+
+[project.scripts]
+tsp-lab = "tsp_lab.cli:main"
+
+[tool.setuptools]
+packages = ["tsp_lab"]
